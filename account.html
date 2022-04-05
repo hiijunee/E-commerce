@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <div class="container">
@@ -171,6 +172,25 @@
         LoginForm.style.transform = "translateX(300px)";
         Indicator.style.transform = "translateX(0px)";
       }
+    </script>
+    <!-----  S C R O L L  ------->
+
+    <script>
+      ScrollReveal({
+        // reset: true,
+        distance: "180px",
+        duration: 3000,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal(".col-2", {
+        delay: 700,
+        origin: "top",
+      });
+      ScrollReveal().reveal(".row", {
+        delay: 700,
+        origin: "bottom",
+      });
     </script>
   </body>
 </html>

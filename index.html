@@ -13,6 +13,8 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!----------For Scroll Js---------->
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <div class="header">
@@ -429,6 +431,32 @@
       VanillaTilt.init(document.querySelectorAll(".still"), {
         max: 25,
         speed: 400,
+      });
+    </script>
+    <!-----  S C R O L L  ------->
+
+    <script>
+      ScrollReveal({
+        // reset: true,
+        distance: "180px",
+        duration: 3000,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal(".col-2, .row", {
+        delay: 700,
+        origin: "bottom",
+      });
+
+      ScrollReveal().reveal(".col-3, .col-5", {
+        delay: 700,
+        origin: "bottom",
+        interval: 800,
+      });
+      ScrollReveal().reveal(".col-4", {
+        delay: 700,
+        origin: "top",
+        interval: 800,
       });
     </script>
   </body>

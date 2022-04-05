@@ -13,6 +13,8 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!----------For Scroll Js---------->
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <div class="container">
@@ -297,6 +299,22 @@
           MenuItems.style.maxHeight = "0px";
         }
       }
+    </script>
+    <!-----  S C R O L L  ------->
+
+    <script>
+      ScrollReveal({
+        // reset: true,
+        distance: "180px",
+        duration: 3000,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal(".row", {
+        delay: 700,
+        origin: "top",
+        interval: 800,
+      });
     </script>
   </body>
 </html>

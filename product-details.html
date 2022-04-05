@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <div class="container">
@@ -258,6 +259,27 @@
       SmallImg[4].onclick = function () {
         ProductImg.src = SmallImg[4].src;
       };
+    </script>
+    <!-----  S C R O L L  ------->
+
+    <script>
+      ScrollReveal({
+        // reset: true,
+        distance: "180px",
+        duration: 3000,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal(".row", {
+        delay: 700,
+        origin: "top",
+        // interval: 800,
+      });
+      ScrollReveal().reveal(".col-4", {
+        delay: 700,
+        origin: "bottom",
+        interval: 800,
+      });
     </script>
   </body>
 </html>
